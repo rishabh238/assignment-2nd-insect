@@ -1,0 +1,279 @@
+@font-face {
+  font-family: cormo;
+  src: url("./assets/fonts/CormorantGaramond-VariableFont_wght.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+main .left {
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+}
+main .left .top-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 15%;
+}
+main .left .top-left h1 {
+  color: rgba(14, 43, 35, 0.815);
+  font-size: 30px;
+}
+main .left .top-left .search-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(240, 240, 240);
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+}
+main .left .top-left .search-bar i {
+  margin-left: 12px;
+  color: rgb(117, 117, 117);
+  left: 5%;
+  top: 20%;
+  font-size: 20px;
+}
+main .left .top-left .search-bar input {
+  border: none;
+  width: 80%;
+  border-radius: 10px;
+  height: 40px;
+  background-color: rgb(240, 240, 240);
+  color: rgb(117, 117, 117);
+  padding-left: 10px;
+  font-size: medium;
+}
+main .left .top-left .search-bar input:focus {
+  outline: none;
+  border: none;
+}
+main .right {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(189, 61, 49);
+}
+main .right .top-right {
+  width: 100%;
+  height: 15%;
+}
+main .right .top-right ul {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main .right .top-right ul li {
+  list-style: none;
+  color: white;
+  font-size: 15px;
+}
+main .bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 85%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+main .bottom .classification {
+  height: 90%;
+  width: 35%;
+  display: flex;
+  flex-direction: row;
+}
+main .bottom .classification .heading {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .bottom .classification .heading h2 {
+  font-size: 60px;
+  font-family: cormo;
+  color: rgba(14, 43, 35, 0.829);
+  font-style: italic;
+  width: -moz-fit-content;
+  width: fit-content;
+  transform: rotate(-90deg);
+  position: relative;
+  left: 60%;
+}
+main .bottom .classification .points-contain {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  gap: 4%;
+  flex-direction: column;
+  padding-left: 20%;
+  margin-top: 20px;
+}
+main .bottom .classification .points-contain .point {
+  height: 12%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .bottom .classification .points-contain .point .heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+main .bottom .classification .points-contain .point .heading .dot {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background-color: rgb(189, 61, 49);
+}
+main .bottom .classification .points-contain .point .heading h3 {
+  font-size: 14px;
+  color: rgba(14, 43, 35, 0.829);
+}
+main .bottom .classification .points-contain .point p {
+  color: rgba(14, 43, 35, 0.829);
+  border-bottom: 2px solid rgb(216, 216, 216);
+  padding-bottom: 10px;
+  margin-left: 18px;
+  width: 150px;
+  font-size: 14px;
+}
+main .bottom .img-container {
+  height: 90%;
+  width: 30%;
+  position: relative;
+}
+main .bottom .img-container img {
+  position: absolute;
+  left: 0;
+  height: 100%;
+}
+main .bottom .insect-info {
+  height: 90%;
+  width: 30%;
+  position: relative;
+  right: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+main .bottom .insect-info .info {
+  height: 30%;
+  width: 80%;
+}
+main .bottom .insect-info .info:nth-child(1) h3 {
+  font-size: 50px;
+  font-weight: 400;
+  width: 50%;
+  font-family: comro;
+}
+main .bottom .insect-info .info:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  justify-content: space-between;
+}
+main .bottom .insect-info .info:nth-child(2) .diagram-cont {
+  height: 100%;
+  width: 50%;
+  border-right: 2px solid rgb(167, 166, 166);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .bottom .insect-info .info:nth-child(2) .diagram-cont img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main .bottom .insect-info .info:nth-child(2) .diagram-cont p {
+  font-size: 12px;
+}
+main .bottom .insect-info .info:nth-child(2) .char-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: flex-start;
+  gap: 10px;
+}
+main .bottom .insect-info .info:nth-child(2) .char-cont div {
+  display: flex;
+  flex-direction: row;
+  height: 30%;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+main .bottom .insect-info .info:nth-child(2) .char-cont div i {
+  font-size: 25px;
+  color: rgb(235, 189, 152);
+}
+main .bottom .insect-info .info:nth-child(2) .char-cont div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+}
+main .bottom .insect-info .info:nth-child(2) .char-cont div div h4 {
+  font-size: 15px;
+}
+main .bottom .insect-info .info:nth-child(2) .char-cont div div p {
+  font-size: 13px;
+}
+main .bottom .insect-info .info:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+}
+main .bottom .insect-info .info:nth-child(3) h3 {
+  font-size: 20px;
+  color: orange;
+}
+main .bottom .insect-info .info:nth-child(3) .tog-cont {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+}
+main .bottom .insect-info .info:nth-child(3) .tog-cont i {
+  font-size: 30px;
+  color: rgb(211, 211, 211);
+}
+main .bottom .insect-info .info:nth-child(3) button {
+  background-color: rgb(219, 189, 147);
+  border: none;
+  border-radius: 10px;
+  width: 60%;
+  padding: 12px 20px;
+  color: rgb(48, 47, 47);
+}
