@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background: #ff0000;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#themeBtn {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    background: white;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-btn {
+    background: crimson;
+}
+
+/* Dark Theme */
+
+body.dark {
+    background: #121212;
+    color: white;
+}
+
+body.dark input {
+    background: #222;
+    color: white;
+    border: 1px solid #444;
+}
+
+body.dark li {
+    background: #222;
+}
+
+body.dark button {
+    background: #444;
+}
+
+body.dark .delete-btn {
+    background: rgb(255, 12, 60);
+}
